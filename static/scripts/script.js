@@ -1,0 +1,2 @@
+pathHasStatic = true;
+saveThemeToLocalStorage = true;
