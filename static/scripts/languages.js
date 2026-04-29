@@ -59,7 +59,7 @@ function updateJobTitle() {
         jobTitle1.innerHTML = language[1];
         jobTitle2.innerHTML = language[2] + " | " + language[3];
     }
-    if ((screen.width <= 520 && screen.width > 512) || screen.width < 320) {
+    if (screen.width <= 403) {
         jobTitle2.innerHTML = language[2];
         jobTitle3.innerHTML = language[3];
     }

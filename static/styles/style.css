@@ -362,20 +362,21 @@ main {
 }
 
 .description:nth-of-type(4) {
-    margin-top: 10vh;
+    margin-top: 80px;
 }
 
 .highlights-title {
     text-align: center;
-    font-size: 8vh;
+    font-size: 55px;
     font-weight: 500;
     color: var(--text80);
 
-    margin-top: 10vw;
+    margin-top: 120px;
 }
 
 .highlights {
     width: 100%;
+    margin-top: 50px;
     margin-bottom: 300px;
 }
 
@@ -389,7 +390,7 @@ main {
 }
 
 .game-cover {
-    width: 10vh;
+    width: 70px;
     border-radius: 35%;
 }
 
@@ -449,17 +450,35 @@ main {
     margin-top: 0;
 }
 
-@media (max-width: 513px) {
+@media (max-width: 520px) {
     .profile-picture {
         width: 61px;
         height: 61px;
     }
 
     .job-title {
-        font-size: 30px;
+        font-size: 38px;
     }
 
     .description {
-        font-size: 17px;
+        font-size: 22px;
+    }
+
+    .description:nth-of-type(4) {
+        margin-top: 50px;
+    }
+
+    .highlights-title {
+        margin-top: 65px;
+    }
+
+    .highlights {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 396px) {
+    .job-title {
+        font-size: 30px;
     }
 }
