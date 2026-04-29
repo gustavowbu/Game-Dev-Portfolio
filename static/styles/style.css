@@ -457,7 +457,7 @@ main {
     }
 
     .job-title {
-        font-size: 38px;
+        font-size: 37px;
     }
 
     .description {
@@ -473,12 +473,38 @@ main {
     }
 
     .highlights {
-        margin-top: 25px;
+        margin-top: 40px;
     }
 }
 
-@media (max-width: 396px) {
+@media (max-width: 393px) {
     .job-title {
         font-size: 30px;
+    }
+
+    .description {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 405px) {
+    .highlights-title {
+        font-size: 50px;
+        margin-top: 59px;
+    }
+
+    .highlights {
+        margin-top: 36px;
+    }
+}
+
+@media (max-width: 369px) {
+    .highlights-title {
+        font-size: 43px;
+        margin-top: 51px;
+    }
+
+    .highlights {
+        margin-top: 31px;
     }
 }
