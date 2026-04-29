@@ -41,11 +41,13 @@ function updateJobTitle() {
     // Portuguese Example:
     // 
     // jobTitle1.innerHTML = "Desenvolvedor de Jogos | Programador | Estudante";
-    // if (screen.width < 910) {
+    // jobTitle2.innerHTML = "";
+    // jobTitle3.innerHTML = "";
+    // if (screen.width < 1070) {
     //     jobTitle1.innerHTML = "Desenvolvedor de Jogos";
     //     jobTitle2.innerHTML = "Programador | Estudante";
     // }
-    // if (screen.width < 323) {
+    // if ((screen.width <= 520 && screen.width > 512) || screen.width < 320) {
     //     jobTitle2.innerHTML = "Programador";
     //     jobTitle3.innerHTML = "Estudante";
     // }
@@ -53,11 +55,11 @@ function updateJobTitle() {
     jobTitle1.innerHTML = language[1] + " | " + language[2] + " | " + language[3];
     jobTitle2.innerHTML = "";
     jobTitle3.innerHTML = "";
-    if (screen.width < 910) {
+    if (screen.width < 1070) {
         jobTitle1.innerHTML = language[1];
         jobTitle2.innerHTML = language[2] + " | " + language[3];
     }
-    if (screen.width < 323) {
+    if ((screen.width <= 520 && screen.width > 512) || screen.width < 320) {
         jobTitle2.innerHTML = language[2];
         jobTitle3.innerHTML = language[3];
     }
@@ -66,7 +68,7 @@ function updateJobTitle() {
 // Get current language
 let currentLanguage = navigator.language;
 if (!(Object.keys(languages).includes(currentLanguage))) {
-    currentLanguage = "en";
+    currentLanguage = "pt";
 }
 let language = languages[currentLanguage];
 updateLanguage();
