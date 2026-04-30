@@ -47,7 +47,7 @@ function updateJobTitle() {
     //     jobTitle1.innerHTML = "Desenvolvedor de Jogos";
     //     jobTitle2.innerHTML = "Programador | Estudante";
     // }
-    // if ((screen.width <= 520 && screen.width > 512) || screen.width < 320) {
+    // if (screen.width <= 403) {
     //     jobTitle2.innerHTML = "Programador";
     //     jobTitle3.innerHTML = "Estudante";
     // }
@@ -68,7 +68,7 @@ function updateJobTitle() {
 // Get current language
 let currentLanguage = navigator.language;
 if (!(Object.keys(languages).includes(currentLanguage))) {
-    currentLanguage = "pt";
+    currentLanguage = "en";
 }
 let language = languages[currentLanguage];
 updateLanguage();
