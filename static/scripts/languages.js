@@ -23,6 +23,7 @@ const languages = {
 
 // Functions
 
+let languageUpdateActions = [];
 function updateLanguage() {
     for (let i = 0; i < language.length; i++) {
         try {
@@ -31,6 +32,11 @@ function updateLanguage() {
         } catch (error) { }
     }
     updateJobTitle();
+
+    for (let i in languageUpdateActions) {
+        let action = languageUpdateActions[i];
+        action();
+    }
 }
 
 function updateJobTitle() {
